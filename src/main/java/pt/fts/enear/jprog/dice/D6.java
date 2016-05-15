@@ -1,6 +1,4 @@
-/*
- * LICENSE
- */
+
 package pt.fts.enear.jprog.dice;
 
 /**
@@ -11,11 +9,15 @@ package pt.fts.enear.jprog.dice;
  * @see Die
  * @author Francisco Tiago Soares
  */
-public class D6 implements Die<Integer>{
-    
+public class D6 implements Die{
+
+    /**
+     * 
+     * @return 6 which is the number of sides on the die
+     */
     @Override
-    public Integer[] getFaces() {
-        return new Integer[]{1,2,3,4,5,6};
+    public int getNumberOfSides() {
+        return 6;
     }
     
 }
